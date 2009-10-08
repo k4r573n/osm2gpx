@@ -1,0 +1,268 @@
+<?xml version='1.0' standalone='no'?>
+<osm version='0.6' generator='xapi: OSM Extended API 2.0' xmlns:xapi='http://www.informationfreeway.org/xapi/0.6' xapi:uri='/api/0.6/*[amenity=post_box][bbox=10.48027,52.24419,10.56507,52.28391]' xapi:planetDate='200910070801' xapi:copyright='2009 OpenStreetMap contributors' xapi:instance='zappyHyper'>
+  <node id='248714052' lat='52.2790297' lon='10.4841933' user='fröstel' xapi:users='fröstel' timestamp='2008-02-21T20:51:38Z' version='1'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='90655179' lat='52.2789684' lon='10.5016628' user='fröstel' xapi:users='fröstel' timestamp='2007-10-28T21:39:52Z' version='1'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='262161758' lat='52.2830378' lon='10.5028745' user='vsandre' xapi:users='singu,fröstel,vsandre' timestamp='2009-01-30T18:33:11Z' version='5'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='collection_times' v='Mo-Fr 17:15\s Sa 11:15'/>
+    <tag k='operator' v='Deutsche Post'/>
+  </node>
+  <node id='248714046' lat='52.2738701' lon='10.4851407' user='fröstel' xapi:users='fröstel' timestamp='2008-02-21T20:51:37Z' version='1'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='90655032' lat='52.2750488' lon='10.5052767' user='fröstel' xapi:users='fröstel' timestamp='2007-10-28T21:39:41Z' version='1'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='271960771' lat='52.2737644' lon='10.5114969' user='singu' xapi:users='singu' timestamp='2008-06-22T18:36:53Z' uid='31732' version='1' changeset='262591'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='created_by' v='JOSM'/>
+  </node>
+  <node id='262161774' lat='52.2782398' lon='10.5201334' user='WanMil' xapi:users='singu,WanMil' timestamp='2009-08-11T20:57:27Z' uid='109925' version='2' changeset='2112431'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='272766517' lat='52.2796547' lon='10.5361991' user='itschytoo' xapi:users='itschytoo' timestamp='2008-06-24T17:34:55Z' uid='36292' version='1' changeset='282716'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='created_by' v='Potlatch 0.9c'/>
+  </node>
+  <node id='257521104' lat='52.2775104' lon='10.5257837' user='Matty' xapi:users='Matty' timestamp='2008-04-14T10:32:01Z' uid='34367' version='1' changeset='139950'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='created_by' v='Potlatch 0.8a'/>
+  </node>
+  <node id='280034431' lat='52.2748534' lon='10.528873' user='k4r573n' xapi:users='Atomuhrcity,krza,vsandre,psmr,k4r573n' timestamp='2009-09-21T17:59:57Z' uid='87429' version='5' changeset='2559770'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='collection_times' v='Mo-Fr 14:00, 17:15; Sa 12:00; So 9:30'/>
+    <tag k='operator' v='Deutsche Post'/>
+  </node>
+  <node id='259646145' lat='52.274504' lon='10.5393905' user='Spongilla' xapi:users='fröstel,geltmar,Spongilla' timestamp='2009-02-02T10:08:48Z' version='3'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='260509306' lat='52.2754437' lon='10.5362436' user='vsandre' xapi:users='itschytoo,geltmar,krza,vsandre' timestamp='2009-01-29T21:52:25Z' version='4'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='398661339' lat='52.2746271' lon='10.5430698' user='ruena' xapi:users='ruena' timestamp='2009-05-14T12:30:01Z' uid='34023' version='1' changeset='1186983'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='241780508' lat='52.2718693' lon='10.4866514' user='fröstel' xapi:users='fröstel' timestamp='2008-02-21T20:52:04Z' version='2'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='84846440' lat='52.2694753' lon='10.5016389' user='Gerd52' xapi:users='fröstel,krza,vsandre,Gerd52' timestamp='2009-04-13T10:13:45Z' uid='92051' version='5' changeset='495800'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='90752797' lat='52.2718868' lon='10.4950624' user='vsandre' xapi:users='fröstel,krza,vsandre' timestamp='2009-01-29T21:56:36Z' version='3'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='90752846' lat='52.2662503' lon='10.491403' user='vsandre' xapi:users='fröstel,krza,vsandre' timestamp='2009-01-29T21:56:14Z' version='3'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='249292825' lat='52.260293' lon='10.4860296' user='vsandre' xapi:users='fröstel,krza,vsandre' timestamp='2009-01-29T21:48:11Z' version='3'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='249292823' lat='52.2608927' lon='10.4997278' user='vsandre' xapi:users='fröstel,krza,vsandre' timestamp='2009-01-29T21:48:12Z' version='3'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='440841402' lat='52.252439' lon='10.4847497' user='psmr' xapi:users='psmr' timestamp='2009-07-12T18:08:10Z' uid='13656' version='1' changeset='1809369'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='operator' v='Deutsche Post'/>
+  </node>
+  <node id='249296945' lat='52.2538478' lon='10.4963573' user='psmr' xapi:users='fröstel,krza,vsandre,psmr' timestamp='2009-07-17T17:20:42Z' uid='13656' version='4' changeset='1855954'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='operator' v='Deutsche Post'/>
+  </node>
+  <node id='59663427' lat='52.2692703' lon='10.5049487' user='fröstel' xapi:users='fröstel' timestamp='2007-09-24T21:50:39Z' uid='14078' version='1' changeset='510309'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='created_by' v='JOSM'/>
+  </node>
+  <node id='247284887' lat='52.2727569' lon='10.5069906' user='vsandre' xapi:users='fröstel,krza,vsandre' timestamp='2009-01-29T22:01:16Z' version='3'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='56456300' lat='52.2698506' lon='10.5231321' user='geltmar' xapi:users='geltmar' timestamp='2007-11-19T06:41:57Z' version='2'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='59195300' lat='52.2687078' lon='10.5194981' user='fröstel' xapi:users='fröstel' timestamp='2007-10-21T23:00:08Z' uid='14078' version='2' changeset='277425'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='created_by' v='JOSM'/>
+  </node>
+  <node id='59663435' lat='52.2645622' lon='10.5076349' user='geltmar' xapi:users='WolfS,geltmar' timestamp='2008-09-12T07:22:40Z' uid='18106' version='3' changeset='614621'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='created_by' v='Potlatch 0.10b'/>
+  </node>
+  <node id='249298649' lat='52.2663182' lon='10.5118531' user='fröstel' xapi:users='fröstel' timestamp='2008-02-25T19:50:16Z' version='1'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='60909679' lat='52.2640598' lon='10.514126' user='vsandre' xapi:users='fröstel,krza,vsandre' timestamp='2009-01-29T21:51:37Z' version='3'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='248703295' lat='52.2625234' lon='10.5236417' user='vsandre' xapi:users='fröstel,krza,vsandre' timestamp='2009-01-29T21:44:25Z' version='3'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='262890303' lat='52.2655641' lon='10.5206074' user='raimar' xapi:users='raimar' timestamp='2008-05-08T22:47:08Z' uid='37240' version='1' changeset='372465'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='created_by' v='Potlatch 0.9'/>
+  </node>
+  <node id='264880367' lat='52.2668448' lon='10.5246281' user='fröstel' xapi:users='fröstel' timestamp='2008-05-16T11:22:52Z' uid='14078' version='1' changeset='459917'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='created_by' v='JOSM'/>
+  </node>
+  <node id='280588385' lat='52.2631372' lon='10.5180343' user='vsandre' xapi:users='fröstel,krza,vsandre' timestamp='2009-01-29T22:00:45Z' version='3'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='note' v='FIXME: location just estimated'/>
+  </node>
+  <node id='280588389' lat='52.2661614' lon='10.5145118' user='vsandre' xapi:users='fröstel,Andre68,krza,vsandre' timestamp='2009-01-29T22:00:44Z' version='4'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='128327051' lat='52.269999' lon='10.5300072' user='k4r573n' xapi:users='fröstel,kiney,krza,vsandre,psmr,k4r573n' timestamp='2009-09-18T20:05:07Z' uid='87429' version='8' changeset='2527479'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='collection_times' v='Mo-Fr 17:15; Sa 10:30'/>
+    <tag k='operator' v='Deutsche Post'/>
+  </node>
+  <node id='243836052' lat='52.2715061' lon='10.5270199' user='fröstel' xapi:users='fröstel' timestamp='2008-01-28T12:08:11Z' version='1'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='259646154' lat='52.270878' lon='10.5356372' user='geltmar' xapi:users='fröstel,geltmar,Andre68' timestamp='2009-08-29T13:36:18Z' uid='18106' version='5' changeset='2301068'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='collection_times' v='Mo-Fr 16:15, 17:15; Sa 12:00'/>
+    <tag k='created_by' v='Potlatch 0.10b'/>
+    <tag k='name' v='Humboldtstraße 9'/>
+    <tag k='operator' v='Deutsche Post'/>
+    <tag k='postal_code' v='38106'/>
+  </node>
+  <node id='257994931' lat='52.268493' lon='10.5414825' user='vsandre' xapi:users='fröstel,krza,vsandre' timestamp='2009-01-29T21:47:46Z' version='3'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='298698631' lat='52.2682428' lon='10.536551' user='vsandre' xapi:users='geltmar,krza,vsandre' timestamp='2009-01-29T22:01:34Z' version='3'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='387305516' lat='52.2727845' lon='10.5384494' user='geltmar' xapi:users='Spongilla,geltmar' timestamp='2009-08-30T10:20:48Z' uid='18106' version='2' changeset='2310783'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='128327059' lat='52.2669805' lon='10.5275393' user='vsandre' xapi:users='fröstel,krza,vsandre' timestamp='2009-01-29T22:00:22Z' version='3'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='249321050' lat='52.2653993' lon='10.5308778' user='vsandre' xapi:users='fröstel,krza,vsandre' timestamp='2009-01-29T21:56:16Z' version='3'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='302848027' lat='52.2652731' lon='10.5265753' user='Andre68' xapi:users='Andre68,geltmar' timestamp='2009-06-01T18:29:34Z' uid='31231' version='3' changeset='1391448'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='collection_times' v='Mo-Fr 15:45,18:00; Sa 12:15; So 10:00'/>
+    <tag k='created_by' v='Potlatch 0.10f'/>
+    <tag k='name' v='Steinweg 44'/>
+    <tag k='operator' v='Deutsche Post'/>
+    <tag k='postal_code' v='38100'/>
+  </node>
+  <node id='257994943' lat='52.26738' lon='10.5373452' user='vsandre' xapi:users='fröstel,krza,vsandre' timestamp='2009-01-29T21:47:47Z' version='3'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='268977456' lat='52.2661654' lon='10.5460204' user='vsandre' xapi:users='geltmar,krza,vsandre' timestamp='2009-01-29T21:47:34Z' version='3'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='274109957' lat='52.2631819' lon='10.5438856' user='vsandre' xapi:users='MapBiscuit,krza,vsandre' timestamp='2009-01-29T21:50:00Z' version='3'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='302849444' lat='52.2644307' lon='10.5367672' user='Andre68' xapi:users='Andre68' timestamp='2008-10-07T14:44:36Z' uid='31231' version='1' changeset='128066'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='60909680' lat='52.2602405' lon='10.5126115' user='vsandre' xapi:users='fröstel,krza,vsandre' timestamp='2009-01-29T21:51:47Z' version='3'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='80238897' lat='52.2585619' lon='10.5094248' user='itschytoo' xapi:users='fröstel,krza,vsandre,itschytoo' timestamp='2009-03-05T14:50:12Z' version='4'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='80238973' lat='52.2574527' lon='10.5039176' user='vsandre' xapi:users='fröstel,krza,vsandre' timestamp='2009-01-29T21:50:23Z' version='3'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='80239000' lat='52.2614731' lon='10.509371' user='vsandre' xapi:users='fröstel,krza,vsandre' timestamp='2009-01-29T21:49:45Z' version='3'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='280569851' lat='52.2588819' lon='10.5231159' user='fröstel' xapi:users='fröstel' timestamp='2009-01-02T17:55:18Z' version='2'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='319301997' lat='52.2610232' lon='10.5186427' user='vsandre' xapi:users='fröstel,vsandre' timestamp='2009-01-30T18:31:45Z' version='4'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='collection_times' v='Mo-Fr 15:30, 18:15\s Sa 12:15'/>
+    <tag k='operator' v='Deutsche Post'/>
+  </node>
+  <node id='430833690' lat='52.2534745' lon='10.5078639' user='gibson' xapi:users='gibson' timestamp='2009-06-29T17:49:35Z' uid='40939' version='1' changeset='1679611'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='35914326' lat='52.2612615' lon='10.5323001' user='Andre68' xapi:users='Tryer,Andre68' timestamp='2008-09-17T22:30:25Z' uid='31231' version='5' changeset='657616'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='created_by' v='Potlatch 0.5a'/>
+  </node>
+  <node id='35926641' lat='52.2575269' lon='10.5320227' timestamp='2007-08-24T15:02:45Z' version='1' changeset='246984'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='created_by' v='JOSM'/>
+  </node>
+  <node id='276213456' lat='52.2592632' lon='10.5277619' user='MapBiscuit' xapi:users='MapBiscuit' timestamp='2008-07-04T17:17:19Z' uid='44160' version='1' changeset='389333'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='created_by' v='Potlatch 0.9c'/>
+  </node>
+  <node id='280588390' lat='52.261255' lon='10.5260983' user='vsandre' xapi:users='fröstel,krza,vsandre' timestamp='2009-01-29T22:00:43Z' version='3'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='note' v='FIXME: location just estimated'/>
+  </node>
+  <node id='271034916' lat='52.2584857' lon='10.5449712' user='vsandre' xapi:users='MapBiscuit,krza,vsandre' timestamp='2009-01-29T22:01:57Z' version='3'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='275336223' lat='52.2569171' lon='10.5394434' user='MapBiscuit' xapi:users='MapBiscuit' timestamp='2008-07-01T18:09:38Z' uid='44160' version='1' changeset='362893'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='created_by' v='Potlatch 0.9c'/>
+  </node>
+  <node id='35926120' lat='52.2524585' lon='10.5311424' user='stephan25' xapi:users='Atlanta Konstanza,psmr,stephan25' timestamp='2009-07-30T20:32:30Z' uid='65196' version='5' changeset='1988407'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='35926615' lat='52.2546895' lon='10.5337752' user='stephan25' xapi:users='Tosch28,stephan25' timestamp='2009-07-30T20:32:28Z' uid='65196' version='4' changeset='1988407'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='269929294' lat='52.2544379' lon='10.5398908' user='vsandre' xapi:users='von Putzi,Praetorius,krza,vsandre' timestamp='2009-01-30T18:28:24Z' version='6'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='operator' v='Deutsche Post'/>
+  </node>
+  <node id='271034912' lat='52.252788' lon='10.5445687' user='vsandre' xapi:users='MapBiscuit,von Putzi,krza,vsandre' timestamp='2009-01-30T18:34:18Z' version='6'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='operator' v='Deutsche Post'/>
+  </node>
+  <node id='330431301' lat='52.2527059' lon='10.5393131' user='vsandre' xapi:users='bahnpirat,vsandre' timestamp='2009-01-30T18:27:23Z' version='2'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='name' v='Berliner Platz (Bhf)'/>
+    <tag k='operator' v='Deutsche Post'/>
+    <tag k='postal_code' v='38102'/>
+  </node>
+  <node id='431362175' lat='52.2479211' lon='10.4855931' user='psmr' xapi:users='halfpair,psmr' timestamp='2009-07-25T20:27:28Z' uid='13656' version='2' changeset='1937923'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='operator' v='Deutsche Post'/>
+  </node>
+  <node id='433962203' lat='52.2467193' lon='10.4899779' user='psmr' xapi:users='psmr' timestamp='2009-07-04T16:59:46Z' uid='13656' version='1' changeset='1730968'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='operator' v='Deutsche Post'/>
+  </node>
+  <node id='249296919' lat='52.2496159' lon='10.5055557' user='vsandre' xapi:users='fröstel,geltmar,krza,vsandre' timestamp='2009-01-29T22:05:53Z' version='4'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='430821694' lat='52.2491032' lon='10.5174329' user='gibson' xapi:users='gibson' timestamp='2009-06-29T17:16:32Z' uid='40939' version='1' changeset='1679314'>
+    <tag k='amenity' v='post_box'/>
+  </node>
+  <node id='280703188' lat='52.2783638' lon='10.5568409' user='fröstel' xapi:users='fröstel' timestamp='2008-07-24T11:39:50Z' uid='14078' version='1' changeset='581380'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='note' v='FIXME just estimated'/>
+  </node>
+  <node id='258003693' lat='52.2653336' lon='10.5505688' user='fröstel' xapi:users='fröstel' timestamp='2008-04-16T23:14:21Z' uid='14078' version='1' changeset='173793'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='created_by' v='JOSM'/>
+  </node>
+  <node id='259646156' lat='52.2628075' lon='10.5494728' user='Leffgar' xapi:users='fröstel,Leffgar' timestamp='2009-06-25T13:52:36Z' uid='102715' version='2' changeset='1622816'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='created_by' v='JOSM'/>
+  </node>
+  <node id='274387827' lat='52.2601181' lon='10.5504274' user='MapBiscuit' xapi:users='MapBiscuit' timestamp='2008-06-29T00:04:35Z' uid='44160' version='1' changeset='340182'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='created_by' v='Potlatch 0.9c'/>
+  </node>
+  <node id='273974749' lat='52.2553198' lon='10.5507404' user='MapBiscuit' xapi:users='MapBiscuit' timestamp='2008-06-27T15:09:37Z' uid='44160' version='1' changeset='312884'>
+    <tag k='amenity' v='post_box'/>
+    <tag k='created_by' v='Potlatch 0.9c'/>
+  </node>
+</osm>
