@@ -56,21 +56,19 @@ creator="osm to gpx script">
 <xsl:if test='@k=$osm_key and @v=$osm_value'>
 
 <xsl:choose>
- <xsl:when test='((../tag[@k=$filter_key] and ../tag[@k=$filter_key]/@v) and $invert_filter1="no") or 
-		(not($invert_filter1="no") and not(../tag[@k=$filter_key] and ../tag[@k=$filter_key]/@v))'>
+ <xsl:when test='((../tag[@k=$filter_key] and ../tag[@k=$filter_key]/@v) and $invert_filter1="no") or	(not($invert_filter1="no") and not(../tag[@k=$filter_key]))'>
  &lt;wpt lat=&quot;<xsl:value-of select='../@lat'/>&quot; lon=&quot;<xsl:value-of select='../@lon'/>&quot;&gt;
   &lt;time&gt;<xsl:value-of select='../@timestamp'/>&lt;/time>
   &lt;name&gt;<xsl:value-of select='substring($osm_value,0,4)'/><xsl:value-of select='substring($osm_value,string-length($osm_value),1)'/><xsl:number level="any" count='tag[@v=$osm_value]' />&lt;/name&gt;
-  &lt;desc&gt;<xsl:value-of select='$dscr'/> - <xsl:value-of select='$osm_key'/>=<xsl:value-of select='$osm_value'/>&lt;/desc&gt;
+  &lt;desc&gt;<xsl:value-of select='$dscr'/> - node - filter1 - <xsl:value-of select='$osm_key'/>=<xsl:value-of select='$osm_value'/>&lt;/desc&gt;
   &lt;sym&gt;<xsl:value-of select='$osm_value'/>&lt;/sym&gt;
  &lt;/wpt>
  </xsl:when>
- <xsl:when test='((../tag[@k=$filter2_key] and ../tag[@k=$filter2_key]/@v) and $invert_filter1="no") or 
-		(not($invert_filter2="no") and not(../tag[@k=$filter2_key] and ../tag[@k=$filter2_key]/@v))'>
+<xsl:when test='((../tag[@k=$filter2_key] and ../tag[@k=$filter2_key]/@v) and $invert_filter2="no") or	(not($invert_filter2="no") and not(../tag[@k=$filter2_key]))'>
  &lt;wpt lat=&quot;<xsl:value-of select='../@lat'/>&quot; lon=&quot;<xsl:value-of select='../@lon'/>&quot;&gt;
   &lt;time><xsl:value-of select='../@timestamp'/>&lt;/time>
   &lt;name&gt;<xsl:value-of select='substring($osm_value,0,4)'/><xsl:value-of select='substring($osm_value,string-length($osm_value),1)'/><xsl:number level="any" count='tag[@v=$osm_value]'/>&lt;/name&gt;
-  &lt;desc&gt;<xsl:value-of select='$dscr'/> - <xsl:value-of select='$osm_key'/>=<xsl:value-of select='$osm_value'/>&lt;/desc&gt;
+  &lt;desc&gt;<xsl:value-of select='$dscr'/> - node - filter2 - <xsl:value-of select='$osm_key'/>=<xsl:value-of select='$osm_value'/>&lt;/desc&gt;
   &lt;sym&gt;<xsl:value-of select='$osm_value'/>&lt;/sym&gt;
  &lt;/wpt> 
 </xsl:when>
@@ -87,21 +85,19 @@ creator="osm to gpx script">
 <xsl:if test='@k=$osm_key and @v=$osm_value'>
 
 <xsl:choose>
- <xsl:when test='((../tag[@k=$filter_key] and ../tag[@k=$filter_key]/@v) and $invert_filter1="no") or 
-		(not($invert_filter1="no") and not(../tag[@k=$filter_key] and ../tag[@k=$filter_key]/@v))'>
+ <xsl:when test='((../tag[@k=$filter_key] and ../tag[@k=$filter_key]/@v) and $invert_filter1="no") or	(not($invert_filter1="no") and not(../tag[@k=$filter1_key]))'>
  &lt;wpt lat=&quot;<xsl:value-of select='sum($nodes/@lat) div count($nodes)'/>&quot; lon=&quot;<xsl:value-of select='sum($nodes/@lon) div count($nodes)'/>&quot;&gt;
   &lt;time&gt;<xsl:value-of select='../@timestamp'/>&lt;/time>
   &lt;name&gt;<xsl:value-of select='substring($osm_value,0,4)'/><xsl:value-of select='substring($osm_value,string-length($osm_value),1)'/><xsl:number level="any" count='tag[@v=$osm_value]' />&lt;/name&gt;
-  &lt;desc&gt;<xsl:value-of select='$dscr'/> - <xsl:value-of select='$osm_key'/>=<xsl:value-of select='$osm_value'/>&lt;/desc&gt;
+  &lt;desc&gt;<xsl:value-of select='$dscr'/> - area - filter1 - <xsl:value-of select='$osm_key'/>=<xsl:value-of select='$osm_value'/>&lt;/desc&gt;
   &lt;sym&gt;<xsl:value-of select='$osm_value'/>&lt;/sym&gt;
  &lt;/wpt>
  </xsl:when>
- <xsl:when test='((../tag[@k=$filter2_key] and ../tag[@k=$filter2_key]/@v) and $invert_filter1="no") or 
-		(not($invert_filter2="no") and not(../tag[@k=$filter2_key] and ../tag[@k=$filter2_key]/@v))'>
+ <xsl:when test='((../tag[@k=$filter2_key] and ../tag[@k=$filter2_key]/@v) and $invert_filter2="no") or	(not($invert_filter2="no") and not(../tag[@k=$filter2_key]))'>
  &lt;wpt lat=&quot;<xsl:value-of select='sum($nodes/@lat) div count($nodes)'/>&quot; lon=&quot;<xsl:value-of select='sum($nodes/@lon) div count($nodes)'/>&quot;&gt;
   &lt;time><xsl:value-of select='../@timestamp'/>&lt;/time>
   &lt;name&gt;<xsl:value-of select='substring($osm_value,0,4)'/><xsl:value-of select='substring($osm_value,string-length($osm_value),1)'/><xsl:number level="any" count='tag[@v=$osm_value]'/>&lt;/name&gt;
-  &lt;desc&gt;<xsl:value-of select='$dscr'/> - <xsl:value-of select='$osm_key'/>=<xsl:value-of select='$osm_value'/>&lt;/desc&gt;
+  &lt;desc&gt;<xsl:value-of select='$dscr'/> - area - filter2 - <xsl:value-of select='$osm_key'/>=<xsl:value-of select='$osm_value'/>&lt;/desc&gt;
   &lt;sym&gt;<xsl:value-of select='$osm_value'/>&lt;/sym&gt;
  &lt;/wpt> 
  </xsl:when>
