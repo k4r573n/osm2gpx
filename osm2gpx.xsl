@@ -56,7 +56,7 @@ creator="osm to gpx script">
 <xsl:if test='@k=$osm_key and @v=$osm_value'>
 
 <xsl:choose>
- <xsl:when test='(../tag[@k=$filter_key] and ../tag[@k=$filter_key]/@v) or 
+ <xsl:when test='((../tag[@k=$filter_key] and ../tag[@k=$filter_key]/@v) and $invert_filter1="no") or 
 		(not($invert_filter1="no") and not(../tag[@k=$filter_key] and ../tag[@k=$filter_key]/@v))'>
  &lt;wpt lat=&quot;<xsl:value-of select='../@lat'/>&quot; lon=&quot;<xsl:value-of select='../@lon'/>&quot;&gt;
   &lt;time&gt;<xsl:value-of select='../@timestamp'/>&lt;/time>
@@ -65,7 +65,7 @@ creator="osm to gpx script">
   &lt;sym&gt;<xsl:value-of select='$osm_value'/>&lt;/sym&gt;
  &lt;/wpt>
  </xsl:when>
- <xsl:when test='(../tag[@k=$filter2_key] and ../tag[@k=$filter2_key]/@v) or 
+ <xsl:when test='((../tag[@k=$filter2_key] and ../tag[@k=$filter2_key]/@v) and $invert_filter1="no") or 
 		(not($invert_filter2="no") and not(../tag[@k=$filter2_key] and ../tag[@k=$filter2_key]/@v))'>
  &lt;wpt lat=&quot;<xsl:value-of select='../@lat'/>&quot; lon=&quot;<xsl:value-of select='../@lon'/>&quot;&gt;
   &lt;time><xsl:value-of select='../@timestamp'/>&lt;/time>
@@ -87,7 +87,7 @@ creator="osm to gpx script">
 <xsl:if test='@k=$osm_key and @v=$osm_value'>
 
 <xsl:choose>
- <xsl:when test='(../tag[@k=$filter_key] and ../tag[@k=$filter_key]/@v) or 
+ <xsl:when test='((../tag[@k=$filter_key] and ../tag[@k=$filter_key]/@v) and $invert_filter1="no") or 
 		(not($invert_filter1="no") and not(../tag[@k=$filter_key] and ../tag[@k=$filter_key]/@v))'>
  &lt;wpt lat=&quot;<xsl:value-of select='sum($nodes/@lat) div count($nodes)'/>&quot; lon=&quot;<xsl:value-of select='sum($nodes/@lon) div count($nodes)'/>&quot;&gt;
   &lt;time&gt;<xsl:value-of select='../@timestamp'/>&lt;/time>
@@ -96,7 +96,7 @@ creator="osm to gpx script">
   &lt;sym&gt;<xsl:value-of select='$osm_value'/>&lt;/sym&gt;
  &lt;/wpt>
  </xsl:when>
- <xsl:when test='(../tag[@k=$filter2_key] and ../tag[@k=$filter2_key]/@v) or 
+ <xsl:when test='((../tag[@k=$filter2_key] and ../tag[@k=$filter2_key]/@v) and $invert_filter1="no") or 
 		(not($invert_filter2="no") and not(../tag[@k=$filter2_key] and ../tag[@k=$filter2_key]/@v))'>
  &lt;wpt lat=&quot;<xsl:value-of select='sum($nodes/@lat) div count($nodes)'/>&quot; lon=&quot;<xsl:value-of select='sum($nodes/@lon) div count($nodes)'/>&quot;&gt;
   &lt;time><xsl:value-of select='../@timestamp'/>&lt;/time>
