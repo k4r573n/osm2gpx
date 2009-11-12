@@ -85,7 +85,7 @@ creator="osm to gpx script">
 <xsl:if test='@k=$osm_key and @v=$osm_value'>
 
 <xsl:choose>
- <xsl:when test='((../tag[@k=$filter_key] and ../tag[@k=$filter_key]/@v) and $invert_filter1="no") or	(not($invert_filter1="no") and not(../tag[@k=$filter1_key]))'>
+ <xsl:when test='((../tag[@k=$filter_key] and ../tag[@k=$filter_key]/@v) and $invert_filter1="no") or	(not($invert_filter1="no") and not(../tag[@k=$filter_key]))'>
  &lt;wpt lat=&quot;<xsl:value-of select='sum($nodes/@lat) div count($nodes)'/>&quot; lon=&quot;<xsl:value-of select='sum($nodes/@lon) div count($nodes)'/>&quot;&gt;
   &lt;time&gt;<xsl:value-of select='../@timestamp'/>&lt;/time>
   &lt;name&gt;<xsl:value-of select='substring($osm_value,0,4)'/><xsl:value-of select='substring($osm_value,string-length($osm_value),1)'/><xsl:number level="any" count='tag[@v=$osm_value]' />&lt;/name&gt;
