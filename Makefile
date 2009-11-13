@@ -1,8 +1,15 @@
-INPUT = bs-pb.osm
+###############################################
+#                                             #
+# Makefile to create nice gpx files with POIs #
+#                                             #
+###############################################
+
 #create a gpx-file from an osm-file
+
+INPUT = post_box.osm
 OSM_KEY = amenity
 OSM_VALUE = post_box
-OUTFILE = $(OSM_VALUE)
+OUTPUT = $(OSM_VALUE)
 DEV=/dev/ttyUSB0
 
 #location
@@ -11,22 +18,23 @@ BOTTOM = 52.254
 RIGHT = 10.5551
 TOP = 52.2801
 
-#Filter - listet standard mäßig alle auf
-FILTER1 = bla_irgendwas_das_nicht_als_key_vorkommt^^
+#Filter - lists all by default
+FILTER1 = bla_irgendwas_das_nicht_als_key_vorkommt
 INV_FILTER1 = yes
-FILTER2 = bla_irgendwas_das_nicht_als_key_vorkommt^^
-INV_FILTER2 = yes
+#filter2 = filter 1 ,because otherwise there is a wrong output if only filter1 is given
+FILTER2 = $(FILTER1)
+INV_FILTER2 = $(INV_FILTER1)
 
 
-run: $(OUTFILE).gpx
-	prune.sh $(OUTFILE).gpx
+run: $(OUTPUT).gpx
+	prune.sh $(OUTPUT).gpx
 
-send: $(OUTFILE).gpx
+send: $(OUTPUT).gpx
 	#sendet die gpx datei auf das Garmin
-	gpsbabel -i gpx,snlen=6 -o garmin,snlen=6 -f $(OUTFILE).gpx -F $DEV
+	gpsbabel -i gpx,snlen=6 -o garmin,snlen=6 -f $(OUTPUT).gpx -F $DEV
 
-$(OUTFILE).gpx: $(INPUT)
-	xsltproc -o $(OUTFILE).gpx \
+$(OUTPUT).gpx: $(INPUT)
+	xsltproc -o $(OUTPUT).gpx \
   	--stringparam osm_key $(OSM_KEY) \
   	--stringparam osm_value $(OSM_VALUE) \
   	--stringparam filter_key $(FILTER1) \
@@ -38,6 +46,26 @@ $(OUTFILE).gpx: $(INPUT)
 
 $(INPUT):
 		wget -O "$(INPUT)" "http://www.informationfreeway.org/api/0.6/*[$(OSM_KEY)=$(OSM_VALUE)][bbox=$(LEFT),$(BOTTOM),$(RIGHT),$(TOP)]"
+#oder http://osmxapi.hypercube.telascience.org/api/0.6/*[amenity=shop][bbox=10.492,52.254,10.5551,52.2801]
+
+#incomplete post_boxes
+ic_pb:
+	rm post_box.gpx
+	make INPUT=post_box.osm FILTER1=collection_times INV_FILTER1=yes FILTER2=operator INV_FILTER2=yes
+
+#incomplete restaurant
+ic_rest:
+	rm restaurant.gpx
+	make INPUT=restaurant.osm OSM_VALUE=restaurant FILTER1=opening_hours INV_FILTER1=yes
+	#FILTER2=cuisine INV_FILTER2=no
+
+#complete post_boxes - isnt realy possible cause a node will be selected if filter1 or filter2 is true
+c_pb:
+	rm post_box.gpx
+	make INPUT=post_box.osm FILTER1=collection_times INV_FILTER1=no
+
+
+input: $(INPUT)
 
 edit:
 	vim osm2gpx.xsl
