@@ -6,17 +6,27 @@
 
 #create a gpx-file from an osm-file
 
-INPUT = post_box.osm
 OSM_KEY = amenity
-OSM_VALUE = post_box
+OSM_VALUE = shelter
+#OSM_VALUE = cafe
+INPUT = $(OSM_VALUE).osm
 OUTPUT = $(OSM_VALUE)
 DEV=/dev/ttyUSB0
 
-#location
-LEFT = 10.492
-BOTTOM = 52.2407
-RIGHT = 10.5551
-TOP = 52.2801
+##location
+#LEFT = 10.492
+#BOTTOM = 52.2407
+#RIGHT = 10.7551
+#TOP = 52.4801
+#location teil vom Harz
+#LEFT = 10.4056
+#BOTTOM = 51.8492
+#RIGHT = 10.5319
+#TOP = 51.9167
+LEFT = 10.544
+BOTTOM = 51.71
+RIGHT = 10.684
+TOP = 51.889
 
 #Filter - lists all by default
 FILTER1 = bla_irgendwas_das_nicht_als_key_vorkommt
@@ -37,7 +47,7 @@ all: ic_pb ic_rest
 
 send: $(OUTPUT).gpx
 	#sendet die gpx datei auf das Garmin
-	gpsbabel -i gpx,snlen=6 -o garmin,snlen=6 -f $(OUTPUT).gpx -F $DEV
+	gpsbabel -i gpx,snlen=6 -o garmin,snlen=6 -f $(OUTPUT).gpx -F $(DEV)
 
 $(OUTPUT).gpx: $(INPUT)
 	xsltproc -o $(OUTPUT).gpx \
@@ -51,9 +61,11 @@ $(OUTPUT).gpx: $(INPUT)
 	osm2gpx.xsl $(INPUT)
 
 $(INPUT):
-		wget -O "$(INPUT)" "http://www.informationfreeway.org/api/0.6/*[$(OSM_KEY)=$(OSM_VALUE)][bbox=$(LEFT),$(BOTTOM),$(RIGHT),$(TOP)]"
+	wget -O "$(INPUT)" "http://open.mapquestapi.com/xapi/api/0.6/*[$(OSM_KEY)=$(OSM_VALUE)][bbox=$(LEFT),$(BOTTOM),$(RIGHT),$(TOP)]"
+		#wget -O "$(INPUT)" "http://jxapi.openstreetmap.org/xapi/api/0.6/*[$(OSM_KEY)=$(OSM_VALUE)][bbox=$(LEFT),$(BOTTOM),$(RIGHT),$(TOP)]"
 
 #oder http://osmxapi.hypercube.telascience.org/api/0.6/*[amenity=shop][bbox=10.492,52.254,10.5551,52.2801]
+#oder wget -O "$(INPUT)" "http://www.informationfreeway.org/api/0.6/*[$(OSM_KEY)=$(OSM_VALUE)][bbox=$(LEFT),$(BOTTOM),$(RIGHT),$(TOP)]"
 
 #incomplete post_boxes
 ic_pb:
@@ -77,6 +89,9 @@ input: $(INPUT)
 
 edit:
 	vim osm2gpx.xsl
+
+osm: $(INPUT)
+	josm $(INPUT)
 
 clean:
 	rm *.gpx
